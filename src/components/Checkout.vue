@@ -86,7 +86,7 @@ export default {
         }),
         async submitOrder() {
             this.$v.$touch();
-            if (this.$v.$isvalid) {
+            if (!this.$v.$invalid) {
                 let order = await this.storeOrder(this.order);
                 this.clearCart();
                 this.$router.push(`/thanks/${order}`);

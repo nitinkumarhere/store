@@ -23,7 +23,7 @@ import PageControls from "./PageControls"
 export default {
     components : {PageControls},
     computed: {
-        ...mapGetters({"products":"showProducts"})
+        ...mapGetters({"products":"processedProducts"})
     },
     filters: {
         currency(value) {
@@ -40,3 +40,4 @@ export default {
     }
 }
 </script>
+
