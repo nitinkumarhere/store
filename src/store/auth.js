@@ -1,7 +1,7 @@
 import Axios from "axios";
 import cookie from 'vue-cookies'
 
-const loginUrl = "http://localhost:3500/login";
+const loginUrl = "/api/login";
 export default {
     state: {
         authenticated: cookie.get("authenticated"),
